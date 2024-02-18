@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #110e16;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+
+}
+
+/* .content{
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  gap: 30px;
+} */
+
+.box{
+  width:400px;
+  height: 600px;
+  background: #261e31cf;
+}
+
+.generate-pin{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 25px;
+}
+
+.inputPin{
+  margin-top: 50px;
+  padding: 15px 20px;
+  background: #2b213a;
+  border: 3px solid #5e5e5e;
+  border-radius: 7px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.generate-btn{
+  background: #4450f1;
+  color: #fff;
+  position: absolute;
+  margin-top: 270px;
+  padding: 50px 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 7px solid rgb(46, 135, 170) ;
+  cursor: pointer;
+}
+
+.matchPin{
+  padding: 0 25px;
+}
+
+.calc-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+.cal-body{
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.button{
+  color: #fff;
+  font-size: 25px;
+  background: #42505f;
+  padding: 8px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.notification{
+  text-align: center;
+  margin-top: 25px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+} 
+.notify{
+  background: #2b213a;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+
+}
+
+.fil-up{
+  text-align: center;
+  margin-top: 30px;
+}
+.submit-btn{
+  display: block;
+  /* width: 87%; */
+  /* margin: 0 25px; */
+  margin-left: 18px;
+  padding: 5px 150px;
+  background: #4450f1;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+.submit-btn:hover{
+  background: purple;
+}
+.try{
+  font-size: 22px;
+  color: yellow;
+  margin-top: 10px;
+}
+
+
+
+

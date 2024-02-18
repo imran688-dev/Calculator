@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Pin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="content">
+        <div class="box">
+          <div class="generate-pin">
+            <input type="text" class="inputPin generateInputPin" placeholder="Generate-pin" readonly>
+            <button class="generate-btn">Generate <br> Pin</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="content">
+        <div class="box">
+          <div class="matchPin">
+            <input type="text" class="inputPin showValue" placeholder="Match-pin">
+          </div>
+          <div class="numbers">
+            <div class="cal-body">
+              <div class="calc-button">
+                <div class="button" onclick="inputValue(this.innerText)">7</div>
+                <div class="button" onclick="inputValue(this.innerText)">8</div>
+                <div class="button" onclick="inputValue(this.innerText)">9</div>
+              </div>
+              <div class="calc-button">
+                <div class="button" onclick="inputValue(this.innerText)">4</div>
+                <div class="button" onclick="inputValue(this.innerText)">5</div>
+                <div class="button" onclick="inputValue(this.innerText)">6</div>
+              </div>
+              <div class="calc-button">
+                <div class="button" onclick="inputValue(this.innerText)">1</div>
+                <div class="button" onclick="inputValue(this.innerText)">2</div>
+                <div class="button" onclick="inputValue(this.innerText)">3</div>
+              </div>
+              <div class="calc-button">
+                <div class="button" id="removeBtn">-</div>
+                <div class="button" onclick="inputValue(this.innerText)">0</div>
+                <div class="button" onclick="inputValue(this.innerText)">C</div>
+              </div>
+            </div>
+            <div class="fil-up">
+              <button class="submit-btn">Submit</button>
+              <p class="try"> <span id="tryLeft"> 3 </span> try left</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notification">
+      <p class="wrong-pin notify"> ❌Pin Didn't Match, Please try again</p> <br>
+      <p class="correct-pin notify"> ✅Pin Matched, Secret door is opening for you!</p>
+    </div>
+  </div>
+
+
+
+  <script src="generate-pin.js"></script>
+</body>
+
+</html>
